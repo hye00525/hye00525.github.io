@@ -13,9 +13,9 @@ Here's my [cv].(./cv.pdf)
 
 ### Leadership & Activities
 - Software & Game Development Associations (APPS) (Mar 2019 - Dec 2019)
-- Teaching experience – [Code Club](https://codeclubkorea.org/) Mentor (Sep 2017 - Jun 2018) 
+- Teaching experience â€“ [Code Club](https://codeclubkorea.org/) Mentor (Sep 2017 - Jun 2018) 
 Code Club [Blog](https://blog.naver.com/spqjf12345)
 
 
 ### Study blog
-will be updated 
+will be updated ..
