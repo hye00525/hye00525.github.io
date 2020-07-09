@@ -1,10 +1,11 @@
 ﻿
 
-Interested in Medical Image Analysis and Text Mining.  
+Interested in Medical \*\*Image Analysis\*\* and \*\*Text Mining\*\*.  
 I like to draw pictures. :)
 
 Sookmyung Women University(SMWU), Seoul, Korea (Mar 2017 - Current)
-B.S in Computer Science.  Here's my [cv](/assets/cv.pdf)
+B.S in Computer Science.  
+Here's my [cv](/assets/cv.pdf)
 
 
 ### Work and Research Experience
@@ -13,7 +14,7 @@ B.S in Computer Science.  Here's my [cv](/assets/cv.pdf)
 
 ### Leadership & Activities
 - Software & Game Development Associations (APPS) (Mar 2019 - Dec 2019)
-- Teaching experience â€“ [Code Club](https://codeclubkorea.org/) Mentor (Sep 2017 - Jun 2018) 
+- Teaching experience - [Code Club](https://codeclubkorea.org/) Mentor (Sep 2017 - Jun 2018) 
 Code Club [Blog](https://blog.naver.com/spqjf12345)
 
 
