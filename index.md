@@ -1,6 +1,6 @@
 ﻿
 
-Interested in Medical \*\*Image Analysis\*\* and \*\*Text Mining\*\*.  
+<pre>Interested in Medical \*\*Image Analysis\*\* and \*\*Text Mining\*\*.  
 I like to draw pictures. :)
 
 Sookmyung Women University(SMWU), Seoul, Korea (Mar 2017 - Current)
