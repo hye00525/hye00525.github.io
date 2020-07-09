@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
 # Jekyll configuration
 markdown: kramdown
+
 title                    : "Hyelim Park"
 # Site Author
 author:
