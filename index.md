@@ -19,4 +19,4 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
 
 
 ### Study blog
-will be updated ..
+- will be updated ..
