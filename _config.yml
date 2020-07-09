@@ -1,52 +1,19 @@
-title: Hyelim Park
-author: GitHub User
-email: hye00525@naver.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  B.S in Computer Science
-show_excerpts: true # set to true to show excerpts on the homepage
+theme: jekyll-theme-minimal
+# Jekyll configuration
+markdown: kramdown
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-plainwhite:
-  name: Hyelim Park
-  tagline: Student
-  date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  search: true # set to true to enable searchbar
-  dark_mode: false # set to true to add dark mode toggle
-
-  # generate social links in footer
-  social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
-    rss: rss
-    # dribbble: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # facebook: jekyll
-    # soundcloud: jekyll
-    # telegram: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
-# Build settings
-theme: plainwhite
-
-plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+title                    : "Hyelim Park"
+# Site Author
+author:
+  name             : "Hyelim Park"
+  avatar           : "/assets/cat.jpg"
+  bio              : "B.S Student"
+  location         : "South Korea"
+  email            :
+  links:
+    - label: "hye00525@naver.com"
+      icon: "fas fa-fw fa-envelope-square"
+     # url: hye00525@naver.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+   #   url: "https://devinlife.com"
