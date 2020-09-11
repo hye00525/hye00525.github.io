@@ -1,8 +1,6 @@
 ﻿
-![HELLO](/assets/cat.jpg){width=50%}
-
 Interested in Computer graphics and Medical Image Analysis.  
-I love drawing and playing games.
+I love drawing and playing & making games.
 - My Painting Instagram Account - [geurimu](https://www.instagram.com/geu_rimu/)
 
 
