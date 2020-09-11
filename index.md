@@ -1,11 +1,11 @@
 
 
+![HELLO](/assets/cat.jpg){width=50%}
 
 Interested in Computer graphics and Medical Image Analysis.  
 I love drawing and playing games.
-My Painting Instagram Account - [geurimu](https://www.instagram.com/geu_rimu/)
+- My Painting Instagram Account - [geurimu](https://www.instagram.com/geu_rimu/)
 
-![HELLO](/assets/cat.jpg "hye00525") 
 
 Sookmyung Women's University(SMWU), Seoul, Korea (Mar 2017 - Current)
 B.S in Computer Science.  Here's my [cv](/assets/cv.pdf)
