@@ -1,5 +1,4 @@
-
-
+﻿
 ![HELLO](/assets/cat.jpg){width=50%}
 
 Interested in Computer graphics and Medical Image Analysis.  
@@ -23,8 +22,8 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
 
 ### Project 
 - Unity Project(game programming) 
-  - ["Spider"(mp4)](/assets/spider.mp4) - My first game development (Dec 2018, in a major course)
-  - ["Fight"(mp4)](/assets/fight.mp4), [report](/assets/report.pdf) -  Unity-based Fighting Game (Dec 2019, in a major class)
+  - ["Spider"(mp4)](/assets/Spider.mp4) - My first game development (Dec 2018, in a major course)
+  - ["Fight"(mp4)](/assets/Fight.mp4), [report](/assets/report.pdf) -  Unity-based Fighting Game (Dec 2019, in a major class)
   - ["JokHa"(blog link)](https://m.blog.naver.com/inhahrdgame/221870175040) - Mobile -based Story game (Dec 2019, in Software & Game Development Associations)
 
 - Text Mining & Machine Learning Project - (May 2020 - Current)
