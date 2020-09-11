@@ -1,9 +1,12 @@
 ﻿
 
-Interested in Medical Image Analysis and Text Mining.  
-I like to draw pictures. :)
+Interested in Computer graphics and Medical Image Analysis.  
+I love drawing and playing games.
+My Painting Instagram Account - [geurimu](https://www.instagram.com/geu_rimu/)
 
-Sookmyung Women University(SMWU), Seoul, Korea (Mar 2017 - Current)
+![HELLO](/assets/cat.jpg "hye00525") 
+
+Sookmyung Women's University(SMWU), Seoul, Korea (Mar 2017 - Current)
 B.S in Computer Science.  Here's my [cv](/assets/cv.pdf)
 
 
@@ -17,5 +20,11 @@ B.S in Computer Science.  Here's my [cv](/assets/cv.pdf)
 Code Club [Blog](https://blog.naver.com/spqjf12345)
 
 
-### Study blog
-- will be updated 
+### Project 
+- Unity Project(game programming) 
+  - ["Spider"(mp4)](/assets/spider.mp4) - My first game development (Dec 2018, in a major course)
+  - ["Fight"(mp4)](/assets/fight.mp4), [report](/assets/report.pdf) -  Unity-based Fighting Game (Dec 2019, in a major class)
+  - ["JokHa"(blog link)](https://m.blog.naver.com/inhahrdgame/221870175040) - Mobile -based Story game (Dec 2019, in Software & Game Development Associations)
+
+- Text Mining & Machine Learning Project - (May 2020 - Current)
+ "인싸전" (Python and Javascript), Chrome extension
