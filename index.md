@@ -21,10 +21,10 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
 ### Project 
 - Unity Project(game programming) 
   - ["Spider"]- My first game development (Dec 2018, in a major course)    
-    <iframe width="1280" height="710" src="https://www.youtube.com/embed/toielYhi51o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/toielYhi51o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
   - ["Fight"] [report](/assets/report.pdf)- Unity-based Fighting Game (Dec 2019, in a major class)    
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/1GsifDAfudc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/1GsifDAfudc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
   
   - ["JokHa"(blog link)](https://m.blog.naver.com/inhahrdgame/221870175040) - Mobile -based Story game (Dec 2019, in Software & Game Development Associations)
@@ -32,4 +32,4 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
 - Text Mining & Machine Learning Project - (May 2020 - Current)    
      "인싸전" (Python and Javascript), Chrome extension  
      
-     ![ex_screenshot](/assets/inside.jpg)
+     ![ex_screenshot](/assets/inside.jpg width=50%)
