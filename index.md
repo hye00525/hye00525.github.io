@@ -26,5 +26,5 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
   - ["JokHa"(blog link)](https://m.blog.naver.com/inhahrdgame/221870175040) - Mobile -based Story game (Dec 2019, in Software & Game Development Associations)
 
 - Text Mining & Machine Learning Project - (May 2020 - Current)    
-     "인싸전" (Python and Javascript), Chrome extension
-   ![ex_screenshot](/assets/inside.jpg)
+     "인싸전" (Python and Javascript), Chrome extension  
+     ![ex_screenshot](/assets/inside.jpg)
