@@ -32,4 +32,4 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
 - Text Mining & Machine Learning Project - (May 2020 - Current)    
      "인싸전" (Python and Javascript), Chrome extension  
      
-     ![ex_screenshot](/assets/inside.jpg width=50%)
+     ![ex_screenshot](/assets/inside.jpg)
