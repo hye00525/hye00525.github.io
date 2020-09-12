@@ -20,13 +20,13 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
 
 ### Project 
 - Unity Project(game programming) 
-  - ["Spider"]
-    <iframe class="youtube" src="https://www.youtube.com/watch?v=toielYhi51o&t=54s"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
-    - My first game development (Dec 2018, in a major course)  
+  - ["Spider"]- My first game development (Dec 2018, in a major course)    
+     <iframe class="youtube" src="https://youtu.be/toielYhi51o"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
     
-  - ["Fight"] [report](/assets/report.pdf)  
-    <iframe class="youtube" src="https://www.youtube.com/watch?v=1GsifDAfudc&t=38s"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
-  -  Unity-based Fighting Game (Dec 2019, in a major class)  
+    
+  - ["Fight"] [report](/assets/report.pdf)- Unity-based Fighting Game (Dec 2019, in a major class)
+      <iframe class="youtube" src="https://youtu.be/1GsifDAfudc"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+    
   
   - ["JokHa"(blog link)](https://m.blog.naver.com/inhahrdgame/221870175040) - Mobile -based Story game (Dec 2019, in Software & Game Development Associations)
 
