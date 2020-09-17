@@ -43,7 +43,7 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
      
      ![ex_screenshot](/assets/inside.jpg)
      
- ### Achivements
+### Achivements
  - Scholarships  
      8 times scholarships, Sookmyung Women’s University. *(2017 – 2020)*
    
