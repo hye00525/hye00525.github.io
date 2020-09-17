@@ -39,10 +39,11 @@ B.S in Computer Science.
    <iframe width="544" height="306" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=68EA007C0D12BC36448AEAEEFB71A5BD30BF&outKey=V128e18f38d0495e82e307b234e0da52964bc2ec76ccb2067aa527b234e0da52964bc" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe>   
     - **["JokHa"(blog link)](https://m.blog.naver.com/inhahrdgame/221870175040)**   
     Mobile -based Story game *(Dec 2019, in Software & Game Development Associations)*  
-    - Potision : *Design & Art & Programming*
+    - Potision : *Design & Art & Programming*  
+    
    
-   
-
+     
+  
 - **Text Mining & Machine Learning Project** - *(May 2020 - Current)*    
      "인싸전" (Python and Javascript), Chrome extension   
      - Position : *Front-End & Back-End*
