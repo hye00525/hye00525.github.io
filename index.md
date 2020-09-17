@@ -10,20 +10,20 @@ B.S in Computer Science.
 
 
 ### Work and Research Experience
-- Graphics & Information Visualization Lab, undergraduate researcher *(Nov 2019 - Current)*
+- **Graphics & Information Visualization Lab, undergraduate researcher** *(Nov 2019 - Current)*
 
 - Participated in project on Text Mining & Machine Learning         (Selected as a support project for [URP](https://www.kofac.re.kr/web/contents/openBusiness1-1.do?schM=view&id=17802)) *(May 2020 - Current)*
 
 ### Leadership & Activities
-- Sookmyung Software & Game Development Associations (APPS)  *(Mar 2019 - Dec 2019)*
+- **Sookmyung Software & Game Development Associations (APPS)**  *(Mar 2019 - Dec 2019)*
 
-- Teaching experience - [Code Club](https://codeclubkorea.org/) Mentor *(Sep 2017 - Jun 2018)*   
+- **Teaching experience** - [Code Club](https://codeclubkorea.org/) Mentor *(Sep 2017 - Jun 2018)*   
    Taught Scratch and Python to elementary school students for 1 year
 **Code Club [Blog](https://blog.naver.com/spqjf12345)**
 
 
 ### Project 
-- Unity Project (game programming) 
+- **Unity Project** 
   - **["Spider"]**- My first game development *(Dec 2018, in a major course)*    
     <iframe width="500" height="300" src="https://www.youtube.com/embed/toielYhi51o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
