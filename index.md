@@ -54,6 +54,5 @@ B.S in Computer Science.
  - Scholarships  
      8 times scholarships, Sookmyung Women’s University. *(2017 – 2020)*
    
-### Skills
-   - Python, C/C++/C#, Javascript, Unity, Android Studio, HTML, CSS
+
 
