@@ -15,6 +15,7 @@ B.S in Computer Science.  Here's my [cv](/assets/cv.pdf)
 ### Leadership & Activities
 - Sookmyung Software & Game Development Associations (APPS) (Mar 2019 - Dec 2019)
 - Teaching experience - [Code Club](https://codeclubkorea.org/) Mentor (Sep 2017 - Jun 2018) 
+   Taught Scratch and Python to elementary school students for 1 year
 Code Club [Blog](https://blog.naver.com/spqjf12345)
 
 
@@ -35,3 +36,11 @@ Code Club [Blog](https://blog.naver.com/spqjf12345)
      - Position : Front-End & Back-End
      
      ![ex_screenshot](/assets/inside.jpg)
+     
+ ### Achivements
+ - Scholarships  
+   8 times scholarships, Sookmyung Women’s University. 2017 – 2020
+   
+### Skills
+ - Python, C/C++/C#, Javascript, Unity, Android Studio, HTML, CSS
+
