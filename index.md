@@ -25,12 +25,12 @@ B.S in Computer Science.
 ### Project 
 - **Unity Project** 
   - **["Spider"]**- My first game development *(Dec 2018, in a major course)*    
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/toielYhi51o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/toielYhi51o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
       
         
   - **["Fight"]** [report](/assets/report.pdf)   
   Unity-based Fighting Game *(Dec 2019, in a major class)*    
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/1GsifDAfudc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/1GsifDAfudc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
     
     
       
@@ -38,7 +38,7 @@ B.S in Computer Science.
   - **["JokHa"(blog link)](https://m.blog.naver.com/inhahrdgame/221870175040)**   
     Mobile -based Story game *(Dec 2019, in Software & Game Development Associations)*  
     <Potision> : Design & Art & Programming
-   <iframe width="544" height="306" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=68EA007C0D12BC36448AEAEEFB71A5BD30BF&outKey=V128e18f38d0495e82e307b234e0da52964bc2ec76ccb2067aa527b234e0da52964bc" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe>
+   <iframe width="544" height="306" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=68EA007C0D12BC36448AEAEEFB71A5BD30BF&outKey=V128e18f38d0495e82e307b234e0da52964bc2ec76ccb2067aa527b234e0da52964bc" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe>  
 
 - **Text Mining & Machine Learning Project** - *(May 2020 - Current)*    
      "인싸전" (Python and Javascript), Chrome extension   
