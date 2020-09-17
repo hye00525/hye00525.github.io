@@ -26,12 +26,14 @@ B.S in Computer Science.
 - **Unity Project** 
   - **["Spider"]**- My first game development *(Dec 2018, in a major course)*    
     <iframe width="500" height="300" src="https://www.youtube.com/embed/toielYhi51o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+      
+        
   - **["Fight"]** [report](/assets/report.pdf)   
   Unity-based Fighting Game *(Dec 2019, in a major class)*    
     <iframe width="500" height="300" src="https://www.youtube.com/embed/1GsifDAfudc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
-  
+    
+      
   
   - **["JokHa"(blog link)](https://m.blog.naver.com/inhahrdgame/221870175040)**   
     Mobile -based Story game *(Dec 2019, in Software & Game Development Associations)*  
