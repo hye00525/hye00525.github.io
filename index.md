@@ -6,7 +6,6 @@ I love drawing pictures and playing & making games.
 
 Sookmyung Women's University(SMWU), Seoul, Korea *(Mar 2017 - Current)*
 B.S in Computer Science.  
-**Here's my [cv](/assets/cv.pdf)**
 
 
 ### Work and Research Experience
