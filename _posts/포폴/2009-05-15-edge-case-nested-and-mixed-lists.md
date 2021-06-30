@@ -1,13 +1,9 @@
 ---
-title: "Edge Case: Nested and Mixed Lists"
-categories:
-  - Edge Case
-tags:
-  - content
-  - css
-  - edge case
-  - lists
-  - markup
+layout: post
+title: 카테고리
+comments: true
+categories: [SAB-JIR]
+tags: [SAB-JIR]
 ---
 
 Nested and mixed lists are an interesting beast. It's a corner case to make sure that

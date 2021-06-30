@@ -96,7 +96,9 @@ analytics:
 author:
   name             : "Rimu"
   avatar           : "/assets/images/gucci.jpg"
-  bio              : "진리는 구글에\n  공부 & 삽질 블로그"
+  bio              : 
+  "진리는 구글에
+  공부 & 삽질 블로그"
   location         : "Seoul, Korea"
   email            : "hye00525@cglab.snu.ac.kr"
   links:
