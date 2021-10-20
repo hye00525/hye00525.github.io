@@ -19,25 +19,18 @@ M.S in Computer Science _ in SNU*(Mar 2021 - Current)*.
 
 ### Project 
 
-- **Game Development**
-- 
-- Mobile -based Story game *(Dec 2019, in Software & Game Development Associations)*
--   
+- **Game Development** 
+- Mobile -based Story game *(Dec 2019, in Software & Game Development Associations)* 
     - **Position** : *Design & Art & Engine Programming*
-    - 
    ![ex_screenshot](/assets/jokha.jpg) 
       
     
    
     
-- **Text Mining & Machine Learning Project** - *(2020 - 2021)*
--     
+- **Text Mining & Machine Learning Project** - *(2020 - 2021)*   
      "인싸전" (Python and Javascript), Chrome extension
--
      - **Position** : *Front-End & Back-End*
--
      - **["Report"](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10529956&mark=0&useDate=&bookmarkCnt=0&ipRange=N&accessgl=Y&language=ko_KR)**
--
      ![ex_screenshot](/assets/inside.jpg)
 
 
