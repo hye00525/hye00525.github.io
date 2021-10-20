@@ -18,17 +18,19 @@ M.S in Computer Science _ in SNU*(Mar 2021 - Current)*.
 
 
 ### Project 
-- **Game Development**
-   <iframe width="544" height="306" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=68EA007C0D12BC36448AEAEEFB71A5BD30BF&outKey=V128e18f38d0495e82e307b234e0da52964bc2ec76ccb2067aa527b234e0da52964bc" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe> 
-    Mobile -based Story game *(Dec 2019, in Software & Game Development Associations)*  
-    - **Position** : *Design & Art & Engine Programming*  
+
+- **Game Development** 
+- Mobile -based Story game *(Dec 2019, in Software & Game Development Associations)* 
+    - **Position** : *Design & Art & Engine Programming*
+   ![ex_screenshot](/assets/jokha.jpg) 
+      
     
    
     
-- **Text Mining & Machine Learning Project** - *(2020 - 2021)*    
-     "인싸전" (Python and Javascript), Chrome extension 
+- **Text Mining & Machine Learning Project** - *(2020 - 2021)*   
+     "인싸전" (Python and Javascript), Chrome extension
      - **Position** : *Front-End & Back-End*
-     - **["Report"](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10529956&mark=0&useDate=&bookmarkCnt=0&ipRange=N&accessgl=Y&language=ko_KR)**     
+     - **["Report"](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10529956&mark=0&useDate=&bookmarkCnt=0&ipRange=N&accessgl=Y&language=ko_KR)**
      ![ex_screenshot](/assets/inside.jpg)
 
 
