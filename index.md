@@ -5,6 +5,11 @@ B.S in Computer Science _ in SMWU*(Mar 2017 - Feb 2021)*.
 M.S in Computer Science _ in SNU*(Mar 2021 - Current)*.  
 
 
+### Current Project
+   - **AIDA project Engine Development** 
+   - **Study on Medical Image Segmentation** 
+
+
 ### Work and Research Experience
 - **Graphics & Information Visualization Lab, undergraduate researcher** *(Nov 2019 - - Feb 2021)*
 
@@ -22,6 +27,7 @@ M.S in Computer Science _ in SNU*(Mar 2021 - Current)*.
 - **Game Development** 
 - Mobile -based Story game *(Dec 2019, in Software & Game Development Associations)* 
     - **Position** : *Design & Art & Engine Programming*
+    - 
    ![ex_screenshot](/assets/jokha.jpg) 
       
     
@@ -35,9 +41,6 @@ M.S in Computer Science _ in SNU*(Mar 2021 - Current)*.
 
 
 
-### Current Project
-   - **AIDA project Engine Development** 
-   - **Study on Medical Image Segmentation** 
 
 
 
