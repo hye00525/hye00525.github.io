@@ -2,7 +2,8 @@
 Interested in Medical Image Analysis.  Deap Learning
 
 B.S in Computer Science _ in SMWU*(Mar 2017 - Feb 2021)*.  
-M.S in Computer Science _ in SNU*(Mar 2021 - Current)*.  
+M.S in Computer Science _ in SNU (Computer Graphics & Image Processing Lab)*(Mar 2021 - Current)*.  
+
 
 
 ### Current Project
