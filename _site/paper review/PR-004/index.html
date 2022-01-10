@@ -1,0 +1,694 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[논문읽기] Image Super-Resolution by Neural Texture Transfer(SRNTT) - ZZEN’s Blog</title>
+<meta name="description" content="이 글은 2019 CVPR 논문, Image Super-Resolution by Neural Texture Transfer를 참고하여 작성하였습니다.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="ZZEN's Blog">
+<meta property="og:title" content="[논문읽기] Image Super-Resolution by Neural Texture Transfer(SRNTT)">
+<meta property="og:url" content="http://localhost:4000/paper%20review/PR-004/">
+
+
+  <meta property="og:description" content="이 글은 2019 CVPR 논문, Image Super-Resolution by Neural Texture Transfer를 참고하여 작성하였습니다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-09-10T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/paper%20review/PR-004/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "ZZEN",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="ZZEN's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">ZZEN's Blog</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/DL/" >Deep Learning</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">ZZEN</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Hello! ZZEN의 개발 블로그입니다 :>
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Seoul, Korea</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/nuguziii" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:nuguziii@naver.com">
+            <meta itemprop="email" content="nuguziii@naver.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[논문읽기] Image Super-Resolution by Neural Texture Transfer(SRNTT)">
+    <meta itemprop="description" content="이 글은 2019 CVPR 논문, Image Super-Resolution by Neural Texture Transfer를 참고하여 작성하였습니다.">
+    <meta itemprop="datePublished" content="September 10, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">[논문읽기] Image Super-Resolution by Neural Texture Transfer(SRNTT)
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>이 글은 2019 CVPR 논문, <a href="https://arxiv.org/abs/1903.00834">Image Super-Resolution by Neural Texture Transfer</a>를 참고하여 작성하였습니다.</p>
+
+<p>Image Denoising 관련된 논문 <a href="https://nuguziii.github.io/paper%20review/PR-002/">Noise2Noise</a>을 읽은 적이 있었는데, 이번에는 super-resolution은 영상의 해상도를 더 좋게하는 것입니다. 대표적인 super-resolution 논문으로는 2016년 논문인 <a href="(https://arxiv.org/abs/1609.04802)">SRGAN</a> 있습니다. perceptual loss로 GAN을 사용해서 영상의 texture를 잘 살린 논문이었습니다.</p>
+
+<p>오늘 소개할 논문은 reference-based super-resolution으로 reference를 사용하여 아래 그림처럼(SRNTT) SRGAN 보다 더 좋은 성능을 보이고 있습니다.</p>
+
+<p><img src="https://i.imgur.com/MFzkdau.jpg" alt="xx" /></p>
+
+<p>그럼 한번 어떠한 방법을 썼는지 한번 자세히 살펴보도록 하겠습니다:)</p>
+
+<h2 id="background">Background</h2>
+
+<p>Super Resolution은 저해상도 영상을 이용해 고해상도 영상을 되찾는 방법입니다. single image super resolution은 SISR로 부릅니다. 이때 고해상도 영상을 되살리는 과정에서 texture가 약간의 blurry하게 잘 드러나지 않는다는 문제점들이 있습니다.(그래서 이 문제를 SRGAN 논문에서는 perceptual loss를 사용하여 보완하였습니다.)</p>
+
+<p>이러한 texture를 더 잘 살리고자 하는 방법으로 reference-based super-resolution(RefSR)도 있습니다. 모델이 주어진 저해상도 이미지에서 texture를 살리기는 어려우니, 참고될 만한 영상도 같이 제공하여서 texture를 더 잘 살릴 수 있도록 돕는 것이죠.</p>
+
+<p>이 논문에서는 reference image들이 주어진 저해상도 이미지랑 관련이 있던 없던 기존 SISR 모델들보다 높은 성능을 보인다고 합니다. 관련이 있으면 훨씬 좋은 성능을, 관련이 없는 이미지라도 성능이 떨어지지 않고 기존 모델들과 비슷한 성능을 보입니다.</p>
+
+<blockquote>
+  <p><em>adaptively transfers textures from the Ref images to the SR image</em></p>
+</blockquote>
+
+<p>만약, 의미적으로 Ref image와 SR image가 연관이 있다면 Ref image의 텍스쳐를 transfer 하는 방식을 이용합니다.</p>
+
+<p>주요 contribution은 다음과 같습니다.</p>
+
+<form>
+  <fieldset>
+  <div>1. SISR보다 더 나은 성능 (lack of texture detail), RefSR의 문제점 개선</div><br />
+  <div>2. SRNTT end-to-end deep model로 multi-scale neural texture transfer를 이용해 어떤 reference가 주어져도 SR 가능</div><br />
+  <div>3. dataset CUFED5</div>
+  </fieldset>
+</form>
+
+<h2 id="approach">Approach</h2>
+
+<p>우선, 이 논문에서 제안한 전체적인 구조를 보시면 아래 그림과 같습니다.</p>
+
+<p><img src="https://i.imgur.com/TMA6jNm.png" alt="스크린샷 2019-09-10 오후 2.11.00" /></p>
+
+<p>Ref image에서 쓸만한 정보들을 뽑는 부분(Feature Swapping-노란색 부분), low resolution image에 쓸만한 정보들을 옮기며 해상도를 높이는 부분(Texture Transfer-파란색 부분) 이렇게 두 부분으로 나뉘어 있습니다. 여기서 쓸만한 정보들은 texture 가 되겠죠.</p>
+
+<blockquote>
+  <p><script type="math/tex">I^{SR}</script>, <script type="math/tex">I^{LR}</script>, <script type="math/tex">I^{Ref}</script>가 있을 때, feature space에서 <script type="math/tex">I^{Ref}</script>와 매칭되는 texture를 찾고 (Feature Swapping),
+매칭된 texture를 multi-scale 방식을 이용해 <script type="math/tex">I^{SR}</script>로 transfer 한다. (Texture Transfer)</p>
+</blockquote>
+
+<h3 id="feature-swapping">Feature Swapping</h3>
+
+<p>Feature Swapping에서는 <script type="math/tex">I^{Ref}</script> 영상의 모든 부분을 탐색하면서 부분적으로 비슷한 텍스쳐가 있는지 찾아냅니다. 이때, <script type="math/tex">I^{Ref}</script>와 <script type="math/tex">I^{LR}</script> 사이에 매칭되는 texture가 있는지 판단하기 위해 inner product를 사용합니다.</p>
+
+<p>j번째 ref patch와 <script type="math/tex">I^{LR}</script> 사이의 inner product를 계산하여 similarity map <script type="math/tex">S_j</script>를 구하는 식은 다음과 같습니다.</p>
+
+<script type="math/tex; mode=display">S_j = \phi(I^{LR\uparrow}) * {P_j(\phi(I^{Ref\downarrow\uparrow}))}\over{ \mid\mid P_j(\phi(I^{Ref\downarrow\uparrow}))\mid\mid}</script>
+
+<p>이때, <script type="math/tex">I^{Ref}</script>와 <script type="math/tex">I^{LR}</script>의 해상도를 맞춰주기 위해  <script type="math/tex">I^{LR}</script> 은 up-sampling을 해주고, <script type="math/tex">I^{Ref}</script>는 up-sampling과 down-sampling을 해주어 blurry하게 만듭니다. feature space <script type="math/tex">\phi(I)</script>에서 유사도 매칭을 합니다.</p>
+
+<p>구한 similarity map에서 높은 score를 갖는 부분들을 찾아서 transfer 시켜주기 위하여 swapped feature map M을 구합니다. 식은 아래와 같습니다.</p>
+
+<script type="math/tex; mode=display">P_{w(x,y)}(M) = P_j * (\phi(I^{Ref})), j* = \arg \underset {j}{max}S_j(x,y)</script>
+
+<p>이때는 <script type="math/tex">I^{Ref \downarrow \uparrow}</script> 가 아닌 <script type="math/tex">I^{Ref}</script>를 사용하여 구합니다.</p>
+
+<h3 id="neural-texture-transfer">Neural Texture Transfer</h3>
+
+<p>위의 Feature Swapping 과정을 통해 나온 swapped feature map은 Neural Texture Transfer (전체 구조의 파란 부분)에 사용됩니다.</p>
+
+<p>layer와 layer 사이의 자세한 구조는 아래 그림과 같습니다.</p>
+
+<p><img src="https://i.imgur.com/0OxvPSs.png" alt="texture_transfer" /></p>
+
+<p>이전 layer에서 나온 output과 swapped feature map을 concatenate하여 residual block에 넣어주고, 이 결과를 output과 다시 더해줍니다. 이 과정을 계속 반복하며 점차 타겟인 HR resoultion에 도달하게 됩니다.</p>
+
+<h3 id="loss">Loss</h3>
+
+<p>이 논문에서는 training을 위해 4가지 Loss를 사용합니다.</p>
+
+<script type="math/tex; mode=display">Loss = L_{rec} + L_{per} + L_{adv} + L_{tex}</script>
+
+<p>이때 reconstruction loss로는 MSE, perceptual loss는 VGG19의 relu5_1 layer를, adversarial loss로는 WGAN을 사용하였습니다.</p>
+
+<p>그리고 이 논문에서는 SISR과 다르게 <script type="math/tex">I^{SR}</script>과 <script type="math/tex">I^{Ref}</script>사이의 texture difference도 고려하기 위해 loss <script type="math/tex">L_{tex}</script>를 정의합니다.(<script type="math/tex">I^{SR}</script>이 <script type="math/tex">M_l</script>과 비슷해지기 위함)</p>
+
+<p>식은 아래와 같습니다.</p>
+
+<script type="math/tex; mode=display">L_{tex} = \sum_{l}\lambda_l{||Gr(\phi_l(I^{SR})\centerdot S_l^\star) - Gr(M_l \centerdot S_l^\star)||}_F</script>
+
+<p>여기에서는 Gram matrix를 사용하였고, <script type="math/tex">S_l^{\star}</script>(weighting map for all LR patches)를 사용하여 penalty를 줍니다.</p>
+
+<h2 id="experimental-results">Experimental Results</h2>
+
+<p>이 논문에서는 CUFED5 데이터셋을 사용해서 다양한 similarity level에 따른 Ref image들을 정해줍니다. 4가지의 similarity level을 정의했고, 아래 그림에서 볼 수 있습니다.</p>
+
+<p><img src="https://i.imgur.com/wr17UDh.png" alt="CUFED5" /></p>
+
+<p>가장 왼쪽이 HR image이고, 그 옆에 차례대로 L1, L2, L3, L4 level 데이터셋입니다.</p>
+
+<p>기존의 Super Resolution 논문들에서 제안한 방법과 비교한 그림입니다. SRNTT가 SRGAN과 비교했을 때도 성능이 좋고 같은 방법 (reference-based)을 사용한 CrossNet과 비교해도 훨씬 좋은 것 같습니다.</p>
+
+<p><img src="https://i.imgur.com/IQm1aBA.jpg" alt="캡처" /></p>
+
+<hr />
+<p><br /></p>
+<p style="font-size:14px; color:gray;">
+multi-scale transfer 방법으로 이전 논문보다 더 좋은 성과를 낼 수 있었던 것 같습니다. 8월 달에 바쁘다 보니 한 달 동안 글을 못썼는데, 한번 다시 열심히 써보도록 하겠습니다.
+</p>
+
+<p><strong>Reference:</strong><br />
+[1] <a href="http://web.eecs.utk.edu/~zzhang61/project_page/SRNTT/cvpr2019_final.pdf">Paper</a><br />
+[2] <a href="https://github.com/ZZUTK/SRNTT">SRNTT github</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#vision" class="page__taxonomy-item" rel="tag">Vision</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#paper-review" class="page__taxonomy-item" rel="tag">Paper Review</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-09-10T00:00:00+09:00">September 10, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5B%EB%85%BC%EB%AC%B8%EC%9D%BD%EA%B8%B0%5D+Image+Super-Resolution+by+Neural+Texture+Transfer%28SRNTT%29%20http%3A%2F%2Flocalhost%3A4000%2Fpaper%2520review%2FPR-004%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fpaper%2520review%2FPR-004%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fpaper%2520review%2FPR-004%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/paper%20review/PR-003/" class="pagination--pager" title="[논문읽기] Structured Knowledge Distillation for Semantic Segmentation
+">Previous</a>
+    
+    
+      <a href="/paper%20review/PR-005/" class="pagination--pager" title="[논문읽기] A Comprehensive Overhaul of Feature Distillation
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/paper%20review/PR-005/" rel="permalink">[논문읽기] A Comprehensive Overhaul of Feature Distillation
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">이 글은 2019 ICCV 논문, A Comprehensive Overhaul of Feature Distillation과 clova-ai blog를 참고하여 작성하였습니다.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/paper%20review/PR-003/" rel="permalink">[논문읽기] Structured Knowledge Distillation for Semantic Segmentation
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">이 글은 2019 CVPR 논문, Structured Knowledge Distillation for Semantic Segmentation
+를 참고하여 작성하였습니다.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/paper%20review/PR-002/" rel="permalink">[논문읽기] Noise2Noise: Learning Image Restoration without Clean Data
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">이 글은 2018 ICML 논문, Noise2Noise: Learning Image Restoration without Clean Data와 TechTalksTV 영상을 참고하여 작성하였습니다.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/paper%20review/PR-001/" rel="permalink">[논문읽기] A Style-Based Generator Architecture for Generative Adversarial Networks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">이 글은 2019 CVPR 논문, A Style-Based Generator Architecture for Generative Adversarial Networks를 참고하여 작성하였습니다.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 ZZEN. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/paper%20review/PR-004/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/paper%20review/PR-004"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://nuguziii-github-io-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
