@@ -10,7 +10,7 @@ M.S in Computer Science.
 ### Work Experience
 - Graphics and Data Visualization Lab, undergraduate researcher in SMWU (Nov 2019 - Dec 2020)
 - Computer Graphcis and Image Processing Lab in SNU (Jan 2021 - Current)
-- Participate in [HealthHub](http://www.healthhub.kr/)'s AIDA project (Engine development)) (May 2021 - Current) 
+- Participate in [HealthHub](http://www.healthhub.kr/)'s project (Engine development)) (May 2021 - Current) 
 
 
 ### Project & Paper
